@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/soraListFragment">
+
+    <fragment
+        android:id="@+id/quranFragment"
+        android:name="com.example.myislamicapplication.ui.quran.quranContainer.QuranContainerFragment"
+        android:label="fragment_quran"
+        tools:layout="@layout/fragment_page_quran" >
+     <argument
+      android:name="startPage"
+      app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.myislamicapplication.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/soraListFragment"
+        android:name="com.example.myislamicapplication.ui.quran.soraList.SoraListFragment"
+        android:label="fragment_sora_list"
+        tools:layout="@layout/fragment_sora_list" >
+        <action
+            android:id="@+id/action_soraListFragment_to_quranFragment"
+            app:destination="@id/quranFragment" />
+    </fragment>
+
+</navigation>
