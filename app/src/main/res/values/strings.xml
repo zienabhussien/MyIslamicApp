@@ -12,4 +12,7 @@
     <string name="menu_slideshow">Slideshow</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aya_no">Aya No:</string>
+    <string name="quran">َQuran</string>
+    <string name="azkar">Azkar</string>
 </resources>

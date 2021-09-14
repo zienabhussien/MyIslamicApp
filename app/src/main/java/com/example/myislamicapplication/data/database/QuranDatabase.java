@@ -23,7 +23,7 @@ public abstract class QuranDatabase  extends RoomDatabase{
                 if(INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                             QuranDatabase.class, DATABASE_NAME)
-                            .createFromAsset("databases/quran.db")
+                            .createFromAsset("quran/databases/quran.db")
                             .allowMainThreadQueries()
                             .build();
                 }

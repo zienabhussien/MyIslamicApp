@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.quran.soraList.SoraListFragment">
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      app:cardBackgroundColor="@color/purple_200"
+      app:cardCornerRadius="25dp"
+      android:padding="8dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"
+      android:layout_marginStart="25dp"
+      android:layout_marginEnd="25dp">
+    <EditText
+        android:id="@+id/search_quran_et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawablePadding="12dp"
+        android:enabled="true"
+        android:focusable="true"
+        />
+  </androidx.cardview.widget.CardView>
   <androidx.recyclerview.widget.RecyclerView
       android:orientation="vertical"
       android:id="@+id/sora_rv"
@@ -12,4 +33,4 @@
       android:layout_height="wrap_content"
       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
-</FrameLayout>
+</LinearLayout>

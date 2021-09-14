@@ -27,6 +27,37 @@
         <action
             android:id="@+id/action_soraListFragment_to_quranFragment"
             app:destination="@id/quranFragment" />
+        <action
+            android:id="@+id/action_soraListFragment_to_quranSearchFragment"
+            app:destination="@id/quranSearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quranSearchFragment"
+        android:name="com.example.myislamicapplication.ui.quran.quranSearch.QuranSearchFragment"
+        android:label="fragment_quran_search"
+        tools:layout="@layout/fragment_quran_search" >
+        <action
+            android:id="@+id/action_quranSearchFragment_to_quranFragment"
+            app:destination="@id/quranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/azkarHomeFragment"
+        android:name="com.example.myislamicapplication.ui.azkar.azkarHome.AzkarHomeFragment"
+        android:label="fragment_azkar_home"
+        tools:layout="@layout/fragment_azkar_home" >
+        <action
+            android:id="@+id/action_azkarHomeFragment_to_azkarListFragment"
+            app:destination="@id/azkarListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/azkarListFragment"
+        android:name="com.example.myislamicapplication.ui.azkar.azkarList.AzkarListFragment"
+        android:label="fragment_azkar_list"
+        tools:layout="@layout/fragment_azkar_list">
+        <argument
+            android:name="azkarType"
+            app:argType="string"
+            app:nullable="false"/>
     </fragment>
 
 </navigation>
