@@ -3,12 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1375" />
+        <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1375" />
+        <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1375" />
         <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/drawable/ic_quran.xml" value="0.16979166666666667" />
         <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/drawable/ic_star.xml" value="0.16979166666666667" />
+        <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/layout/activity_main.xml" value="0.16614583333333333" />
         <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/layout/app_bar_main.xml" value="0.25416666666666665" />
         <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/layout/content_main.xml" value="0.25416666666666665" />
         <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/layout/fragment_azkar_home.xml" value="0.25052083333333336" />
         <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/layout/fragment_azkar_list.xml" value="0.25052083333333336" />
+        <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/layout/fragment_page_quran.xml" value="0.23489583333333333" />
         <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/layout/fragment_quran.xml" value="0.25416666666666665" />
         <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/layout/fragment_quran_container.xml" value="0.25416666666666665" />
         <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/layout/fragment_quran_index.xml" value="0.19895833333333332" />
@@ -20,6 +25,8 @@
         <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/layout/list_item_zekr.xml" value="0.25052083333333336" />
         <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/layout/nav_header_main.xml" value="0.25416666666666665" />
         <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/menu/activity_main_drawer.xml" value="0.25052083333333336" />
+        <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1375" />
+        <entry key="..\:/My Projects/MyIslamicApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.17083333333333334" />
       </map>
     </option>
   </component>

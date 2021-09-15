@@ -4,33 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/quran_yellow"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.quran.soraList.SoraListFragment">
-  <androidx.cardview.widget.CardView
-      android:layout_width="match_parent"
-      android:layout_height="50dp"
-      app:cardBackgroundColor="@color/purple_200"
-      app:cardCornerRadius="25dp"
-      android:padding="8dp"
-      android:layout_marginTop="8dp"
-      android:layout_marginBottom="8dp"
-      android:layout_marginStart="25dp"
-      android:layout_marginEnd="25dp">
-    <EditText
-        android:id="@+id/search_quran_et"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:drawableStart="@drawable/ic_baseline_search_24"
-        android:drawablePadding="12dp"
-        android:enabled="true"
-        android:focusable="true"
-        />
-  </androidx.cardview.widget.CardView>
+    tools:context=".ui.quran.soraList.QuranIndexFragment">
+
   <androidx.recyclerview.widget.RecyclerView
       android:orientation="vertical"
       android:id="@+id/sora_rv"
+      android:background="@color/quran_yellow"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      tools:listitem="@layout/list_item_sora"
       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
 </LinearLayout>

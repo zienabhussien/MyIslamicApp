@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/quran_yellow"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.quran.quranSearch.QuranSearchFragment">
  <LinearLayout
@@ -13,7 +14,7 @@
      <androidx.cardview.widget.CardView
          android:layout_width="match_parent"
          android:layout_height="match_parent"
-         app:cardBackgroundColor="@color/purple_200"
+         app:cardBackgroundColor="@color/quran_green"
          app:cardCornerRadius="25dp"
          android:padding="8dp"
          android:layout_marginTop="8dp"

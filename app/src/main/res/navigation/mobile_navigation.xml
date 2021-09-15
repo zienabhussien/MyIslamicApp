@@ -3,39 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/soraListFragment">
+    app:startDestination="@id/quranIndexFragment">
+
 
     <fragment
         android:id="@+id/quranFragment"
         android:name="com.example.myislamicapplication.ui.quran.quranContainer.QuranContainerFragment"
         android:label="fragment_quran"
-        tools:layout="@layout/fragment_page_quran" >
-     <argument
-      android:name="startPage"
-      app:argType="integer" />
+        tools:layout="@layout/fragment_page_quran">
+        <argument
+            android:name="startPage"
+            app:argType="integer" />
     </fragment>
+
+
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.myislamicapplication.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-    <fragment
-        android:id="@+id/soraListFragment"
-        android:name="com.example.myislamicapplication.ui.quran.soraList.SoraListFragment"
-        android:label="fragment_sora_list"
-        tools:layout="@layout/fragment_sora_list" >
+        android:id="@+id/quranIndexFragment"
+        android:name="com.example.myislamicapplication.ui.quran.quranindex.QuranIndexFragment"
+        android:label="fragment_quran_index"
+        tools:layout="@layout/fragment_quran_index">
+
         <action
-            android:id="@+id/action_soraListFragment_to_quranFragment"
+            android:id="@+id/action_quranIndex_to_quranFragment"
             app:destination="@id/quranFragment" />
         <action
-            android:id="@+id/action_soraListFragment_to_quranSearchFragment"
+            android:id="@+id/action_quranIndexFragment_to_quranSearchFragment"
+            app:destination="@id/quranSearchFragment" />
+        <action
+            android:id="@+id/action_quranIndexFragment_to_quranSearchFragment2"
             app:destination="@id/quranSearchFragment" />
     </fragment>
     <fragment
         android:id="@+id/quranSearchFragment"
         android:name="com.example.myislamicapplication.ui.quran.quranSearch.QuranSearchFragment"
         android:label="fragment_quran_search"
-        tools:layout="@layout/fragment_quran_search" >
+        tools:layout="@layout/fragment_quran_search">
         <action
             android:id="@+id/action_quranSearchFragment_to_quranFragment"
             app:destination="@id/quranFragment" />
@@ -44,7 +46,7 @@
         android:id="@+id/azkarHomeFragment"
         android:name="com.example.myislamicapplication.ui.azkar.azkarHome.AzkarHomeFragment"
         android:label="fragment_azkar_home"
-        tools:layout="@layout/fragment_azkar_home" >
+        tools:layout="@layout/fragment_azkar_home">
         <action
             android:id="@+id/action_azkarHomeFragment_to_azkarListFragment"
             app:destination="@id/azkarListFragment" />
@@ -57,7 +59,8 @@
         <argument
             android:name="azkarType"
             app:argType="string"
-            app:nullable="false"/>
+            app:nullable="false" />
     </fragment>
+
 
 </navigation>

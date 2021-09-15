@@ -8,24 +8,26 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardBackgroundColor="@color/purple_200"
+        app:cardBackgroundColor="@color/quran_yellow"
         app:cardElevation="10dp"
         app:cardCornerRadius="12dp">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/zekr_name"
-                android:gravity="center"
-                android:textSize="24sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"/>
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="24sp" />
+
             <ImageView
                 android:id="@+id/zekr_image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
