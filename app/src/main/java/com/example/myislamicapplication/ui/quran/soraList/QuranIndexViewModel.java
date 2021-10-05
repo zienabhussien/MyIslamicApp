@@ -6,11 +6,10 @@ import androidx.annotation.NonNull;
 
 import com.example.myislamicapplication.data.database.QuranDao;
 import com.example.myislamicapplication.data.database.QuranDatabase;
-import com.example.myislamicapplication.data.pojo.Jozz;
-import com.example.myislamicapplication.data.pojo.Sora;
+import com.example.myislamicapplication.data.pojo.quran.Jozz;
+import com.example.myislamicapplication.data.pojo.quran.Sora;
 import com.example.myislamicapplication.data.utils.IndexTabsUtils;
 
-import java.text.Collator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;

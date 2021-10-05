@@ -4,8 +4,8 @@ import android.content.Context;
 
 import androidx.annotation.NonNull;
 
-import com.example.myislamicapplication.data.pojo.Zekr;
-import com.example.myislamicapplication.data.pojo.ZekrType;
+import com.example.myislamicapplication.data.pojo.azkar.Zekr;
+import com.example.myislamicapplication.data.pojo.azkar.ZekrType;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

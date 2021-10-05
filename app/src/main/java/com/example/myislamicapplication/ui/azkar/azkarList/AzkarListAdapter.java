@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myislamicapplication.R;
-import com.example.myislamicapplication.data.pojo.Zekr;
+import com.example.myislamicapplication.data.pojo.azkar.Zekr;
 
 import java.util.ArrayList;
 

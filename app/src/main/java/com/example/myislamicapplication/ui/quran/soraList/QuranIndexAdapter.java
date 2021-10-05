@@ -10,8 +10,8 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myislamicapplication.R;
-import com.example.myislamicapplication.data.pojo.Jozz;
-import com.example.myislamicapplication.data.pojo.Sora;
+import com.example.myislamicapplication.data.pojo.quran.Jozz;
+import com.example.myislamicapplication.data.pojo.quran.Sora;
 import com.example.myislamicapplication.ui.quran.quranindex.QuranIndexFragmentDirections;
 
 import java.text.NumberFormat;
@@ -48,14 +48,15 @@ public class QuranIndexAdapter extends RecyclerView.Adapter<QuranIndexAdapter.Vi
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-       TextView soraNumber, soraName,from,to,wordTo;
+       TextView soraNumber, soraName,from,to,wordTo,pageFrom;
         public ViewHolder( View itemView) {
             super(itemView);
             soraNumber = itemView.findViewById(R.id.sora_number);
-            soraName = itemView.findViewById(R.id.soraName);
+            soraName = itemView.findViewById(R.id.sora_name);
             from = itemView.findViewById(R.id.sora_start);
             to = itemView.findViewById(R.id.sora_end);
-            wordTo = itemView.findViewById(R.id.wordTo);
+            wordTo = itemView.findViewById(R.id.word_to);
+            pageFrom = itemView.findViewById(R.id.word_from);
         }
 
         public void bind(Sora sora) {
@@ -96,6 +97,7 @@ public class QuranIndexAdapter extends RecyclerView.Adapter<QuranIndexAdapter.Vi
             from.setVisibility(View.GONE);
             to.setVisibility(View.GONE);
             wordTo.setVisibility(View.GONE);
+            pageFrom.setVisibility(View.GONE);
 
             soraNumber.setText(nf.format(page));
 

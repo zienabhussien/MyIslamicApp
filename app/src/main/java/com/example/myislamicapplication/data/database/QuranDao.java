@@ -3,11 +3,10 @@ package com.example.myislamicapplication.data.database;
 import androidx.room.Dao;
 import androidx.room.Query;
 
-import com.example.myislamicapplication.data.pojo.Aya;
-import com.example.myislamicapplication.data.pojo.Jozz;
-import com.example.myislamicapplication.data.pojo.Sora;
+import com.example.myislamicapplication.data.pojo.quran.Aya;
+import com.example.myislamicapplication.data.pojo.quran.Jozz;
+import com.example.myislamicapplication.data.pojo.quran.Sora;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Dao

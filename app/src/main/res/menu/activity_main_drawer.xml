@@ -12,6 +12,10 @@
             android:id="@+id/azkarHomeFragment"
             android:icon="@drawable/ic_star"
             android:title="@string/azkar" />
+        <item
+            android:id="@+id/prayerTimesFragment"
+            android:icon="@drawable/ic_star"
+            android:title="@string/menu_prayer_times" />
 
     </group>
 </menu>

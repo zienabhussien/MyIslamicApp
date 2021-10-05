@@ -11,7 +11,7 @@ import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myislamicapplication.R;
-import com.example.myislamicapplication.data.pojo.Aya;
+import com.example.myislamicapplication.data.pojo.quran.Aya;
 
 import java.util.ArrayList;
 

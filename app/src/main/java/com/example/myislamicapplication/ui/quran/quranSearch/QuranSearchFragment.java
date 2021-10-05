@@ -13,12 +13,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.example.myislamicapplication.R;
-import com.example.myislamicapplication.data.database.QuranDao;
-import com.example.myislamicapplication.data.database.QuranDatabase;
-import com.example.myislamicapplication.data.pojo.Aya;
+import com.example.myislamicapplication.data.pojo.quran.Aya;
 
 import java.util.ArrayList;
 

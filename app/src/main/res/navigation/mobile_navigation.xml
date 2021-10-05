@@ -9,7 +9,7 @@
     <fragment
         android:id="@+id/quranFragment"
         android:name="com.example.myislamicapplication.ui.quran.quranContainer.QuranContainerFragment"
-        android:label="fragment_quran"
+        android:label="@string/fragment_quran"
         tools:layout="@layout/fragment_page_quran">
         <argument
             android:name="startPage"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/quranIndexFragment"
         android:name="com.example.myislamicapplication.ui.quran.quranindex.QuranIndexFragment"
-        android:label="fragment_quran_index"
+        android:label="@string/fragment_quran_index"
         tools:layout="@layout/fragment_quran_index">
 
         <action
@@ -36,7 +36,7 @@
     <fragment
         android:id="@+id/quranSearchFragment"
         android:name="com.example.myislamicapplication.ui.quran.quranSearch.QuranSearchFragment"
-        android:label="fragment_quran_search"
+        android:label="@string/fragment_quran_search"
         tools:layout="@layout/fragment_quran_search">
         <action
             android:id="@+id/action_quranSearchFragment_to_quranFragment"
@@ -45,7 +45,7 @@
     <fragment
         android:id="@+id/azkarHomeFragment"
         android:name="com.example.myislamicapplication.ui.azkar.azkarHome.AzkarHomeFragment"
-        android:label="fragment_azkar_home"
+        android:label="@string/fragment_azkar_home"
         tools:layout="@layout/fragment_azkar_home">
         <action
             android:id="@+id/action_azkarHomeFragment_to_azkarListFragment"
@@ -54,13 +54,18 @@
     <fragment
         android:id="@+id/azkarListFragment"
         android:name="com.example.myislamicapplication.ui.azkar.azkarList.AzkarListFragment"
-        android:label="fragment_azkar_list"
+        android:label="@string/fragment_azkar_list"
         tools:layout="@layout/fragment_azkar_list">
         <argument
             android:name="azkarType"
             app:argType="string"
             app:nullable="false" />
     </fragment>
+    <fragment
+        android:id="@+id/prayerTimesFragment"
+        android:name="com.example.myislamicapplication.ui.prayertimes.prayertimeshome.PrayerTimesFragment"
+        android:label="@string/fragment_prayer_times"
+        tools:layout="@layout/fragment_prayer_times" />
 
 
 </navigation>

@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.example.myislamicapplication.data.pojo.Aya;
+import com.example.myislamicapplication.data.pojo.quran.Aya;
 
 @Database(entities = {Aya.class},version = QuranDatabase.DATABASE_VERSION,exportSchema = false)
 public abstract class QuranDatabase  extends RoomDatabase{

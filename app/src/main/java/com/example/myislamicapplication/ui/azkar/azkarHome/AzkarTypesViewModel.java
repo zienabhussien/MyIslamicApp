@@ -3,9 +3,8 @@ package com.example.myislamicapplication.ui.azkar.azkarHome;
 import android.content.Context;
 
 import com.example.myislamicapplication.data.azkarProvider.AzkarProvider;
-import com.example.myislamicapplication.data.pojo.ZekrType;
+import com.example.myislamicapplication.data.pojo.azkar.ZekrType;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 
 public class AzkarTypesViewModel {
