@@ -14,6 +14,8 @@ import com.example.myislamicapplication.data.pojo.prayertimes.City;
 import com.example.myislamicapplication.data.pojo.prayertimes.PrayerAPIResponse;
 import com.example.myislamicapplication.data.pojo.prayertimes.PrayerTiming;
 import com.example.myislamicapplication.data.pojo.prayertimes.Timings;
+import com.example.myislamicapplication.data.prayersnotification.AzanPrayerUtil;
+import com.example.myislamicapplication.data.prayersnotification.PrayersPreferences;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,7 +72,7 @@ public class PrayerTimesViewModel extends ViewModel {
     }
 
 
-    public void setPrayerTimings(City city,int method, int day, int month, int year) {
+    public void setPrayerTimings(Context context,City city,int method, int day, int month, int year) {
         getPrayers(city.getName(), city.getCode(), method,month,year)
                 .enqueue(new Callback<PrayerAPIResponse>() {
                     @Override
@@ -79,6 +81,10 @@ public class PrayerTimesViewModel extends ViewModel {
                         Timings timings = response.body().getData().get(day - 1).getTimings();
                         ArrayList<PrayerTiming> prayers = convertFromTimings(timings);
                         prayerTimings.setValue(prayers);
+                        PrayersPreferences preferences = new PrayersPreferences(context);
+                        preferences.setCity(city.getName());
+                        preferences.setCountry(city.getCode());
+                        AzanPrayerUtil.registerPrayers(context);
                     }
 
                     @Override

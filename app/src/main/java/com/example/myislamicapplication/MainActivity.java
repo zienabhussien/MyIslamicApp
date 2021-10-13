@@ -10,7 +10,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.myislamicapplication.data.database.QuranDatabase;
+import com.example.myislamicapplication.data.prayersnotification.AzanPrayerUtil;
 import com.example.myislamicapplication.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
 
@@ -42,9 +42,10 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        QuranDatabase.getInstance(this).quranDao().getSoraByNumber(1);
-
+       AzanPrayerUtil.registerPrayers(this);
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -43,9 +43,7 @@ public class PrayerTimesFragment extends Fragment {
         setupObservers();
 
 
-
     }
-
 
 
     private void initViews(View view){
@@ -65,7 +63,7 @@ public class PrayerTimesFragment extends Fragment {
                 calendar.get(Calendar.MONTH),
                 calendar.get(Calendar.DAY_OF_MONTH),
                 (view1, year, monthOfYear, dayOfMonth) -> {
-                    viewModel.setPrayerTimings(viewModel.getCurrentCity().getValue(),
+                    viewModel.setPrayerTimings(getContext(),viewModel.getCurrentCity().getValue(),
                              viewModel.getCurrentPrayerCalculatedMethod().getValue(),
                             dayOfMonth,monthOfYear,year);
                 });
@@ -93,7 +91,7 @@ public class PrayerTimesFragment extends Fragment {
 
         viewModel.getCurrentCity().observe(getViewLifecycleOwner(), city -> {
          if(viewModel.getCurrentPrayerCalculatedMethod().getValue() != null)
-             viewModel.setPrayerTimings(city,
+             viewModel.setPrayerTimings(getContext(),city,
                      viewModel.getCurrentPrayerCalculatedMethod().getValue(),
                      datePicker.getMonth(),
                      datePicker.getDayOfMonth(), datePicker.getDayOfMonth());
@@ -103,6 +101,7 @@ public class PrayerTimesFragment extends Fragment {
         viewModel.getCurrentPrayerCalculatedMethod().observe(getViewLifecycleOwner(), prayerMethod ->{
             if(viewModel.getCurrentCity().getValue() != null)
                 viewModel.setPrayerTimings(
+                        getContext(),
                         viewModel.getCurrentCity().getValue(),
                         prayerMethod,
                         datePicker.getDayOfMonth(),

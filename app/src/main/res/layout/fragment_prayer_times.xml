@@ -14,11 +14,13 @@
       android:orientation="vertical"
       tools:context=".ui.prayertimes.prayertimeshome.PrayerTimesFragment">
 
-    <Spinner
+
+  <Spinner
         android:id="@+id/citySpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:theme="@style/NumberPickerStyle"
         tools:listitem="@layout/spinner_list_city" />
 
     <Spinner
@@ -28,7 +30,6 @@
         android:layout_margin="16dp"
         android:theme="@style/NumberPickerStyle"
         tools:listitem="@layout/list_item_prayer_method" />
-
 
     <DatePicker
         android:id="@+id/date"
